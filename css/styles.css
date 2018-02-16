@@ -5,9 +5,10 @@
 }
 
 .scroll-pane {
-	width: 80%; /* Ширина видимой области*/
-	height: 400px; /* Высота видимой области*/
-	overflow: auto; /* Если отключены скрипты это правило позволит отобразить обычный скролл */
+	width: 100%; /* Ширина видимой области*/
+	height: 80vh; /* Высота видимой области*/
+	overflow-y: auto; /* Если отключены скрипты это правило позволит отобразить обычный скролл */
+  overflow-x: none;
 }
 
 .profile-photo{
@@ -25,4 +26,15 @@
 
 .full-message{
   margin-top: 10px;
+}
+
+.last-message-time{
+  display: inline-block;
+}
+
+.badge{
+  position: absolute;
+  left: 215px;
+  bottom: 20px;
+  padding: 5px 10px;
 }
