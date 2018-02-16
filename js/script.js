@@ -1,6 +1,9 @@
+$("document").ready(function () {
+    var a = $('.scroll-pane');
+    a.jScrollPane({
+        maintainPosition: true,
+        stickToBottom: true
+    });
 
-$(function()
-{
-    $('.scroll-pane').jScrollPane();
-    console.log("ee");
-});
+    a.data("jsp").scrollTo(0,1000);
+})
