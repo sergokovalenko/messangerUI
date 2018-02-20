@@ -32,19 +32,20 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="#">
+              <img alt="Brand" src="https://www.indeks.ru/upload/medialibrary/1b0/1b02c5d4dc907a2f3d04983d53cffa78.png" width="40px" height="40px"><span class="brand">essanger</span>
+            </a>
+            <!-- <a class="navbar-brand" href="#"></a> -->
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
+            <!-- <ul class="nav navbar-nav">
               <li class="active">
                 <a href="#">Link
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
-              <li>
-                <a href="#">Link</a>
-              </li>
+
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
                   <span class="caret"></span>
@@ -69,34 +70,24 @@
                   </li>
                 </ul>
               </li>
-            </ul>
-            <!-- <form class="navbar-form navbar-left">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-              </form> -->
-            <ul class="nav navbar-nav navbar-right">
+            </ul> -->
+            <ul class="nav navbar-nav nav-pills navbar-right">
+              <li class="active">
+                <a href="#">Search</a>
+              </li>
               <li>
-                <a href="#">Link</a>
+                <a href="#">Settings</a>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language
                   <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="#">Action</a>
+                    <a href="#">Russian</a>
                   </li>
                   <li>
-                    <a href="#">Another action</a>
-                  </li>
-                  <li>
-                    <a href="#">Something else here</a>
-                  </li>
-                  <li role="separator" class="divider"></li>
-                  <li>
-                    <a href="#">Separated link</a>
+                    <a href="#">English</a>
                   </li>
                 </ul>
               </li>
@@ -109,127 +100,85 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-3">
-        <div class="list-group">
-          <div class="list-group-item">
-            <a href="#" class="name">Name Surname</a>
+      <div class="col-sm-3 content">
+        <div class="search-dialog">
+          <div class="search-field">
+            <input type="text" class="form-control" placeholder="Search" maxlength="40">
+          </div>
+        </div>
+        <div class="dialogs scroll-pane">
+          <div class="dialog activeted">
+            <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
+            <a href="#" class="dial-name">Name Surname</a>
             <span class="last-message-time">9:00pm</span>
             <div class="short-message">Hello, i'm very tired</div>
             <span class="badge">14</span>
           </div>
-          <div class="list-group-item">
-            <a href="#" class="name">Name Surname</a>
+          <div class="dialog">
+            <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
+            <a href="#" class="dial-name">Name Surname</a>
             <span class="last-message-time">9:00pm</span>
             <div class="short-message">Hello, i'm very tired</div>
             <span class="badge">14</span>
           </div>
-          <div class="list-group-item">
-            <a href="#" class="name">Name Surname</a>
-            <span class="last-message-time">9:00pm</span>
-            <div class="short-message">Hello, i'm very tired</div>
-            <span class="badge">14</span>
-          </div>
-          <div class="list-group-item">
-            <a href="#" class="name">Name Surname</a>
-            <span class="last-message-time">9:00pm</span>
-            <div class="short-message">Hello, i'm very tired</div>
-            <span class="badge">14</span>
-          </div>
-          <div class="list-group-item">
-            <a href="#" class="name">Name Surname</a>
-            <span class="last-message-time">9:00pm</span>
-            <div class="short-message">Hello, i'm very tired</div>
-            <span class="badge">14</span>
-          </div>
-          <div class="list-group-item">
-            <a href="#" class="name">Name Surname</a>
+          <div class="dialog">
+            <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
+            <a href="#" class="dial-name">Name Surname</a>
             <span class="last-message-time">9:00pm</span>
             <div class="short-message">Hello, i'm very tired</div>
             <span class="badge">14</span>
           </div>
         </div>
       </div>
-<!-- d
+      <!-- d
 d
 d -->
-      <div class="col-sm-9">
-        <div class="messages scroll-pane">
-          <div class="list-group">
-            <div class="list-group-item">
-                <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
-              <a href="#" class="name">Sergey Kovalenko</a>
-              <div class="mess">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-            <div class="list-group-item">
-              <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
-              <a href="#" class="name">Sergey Kovalenko</a>
-              <div class="last-message-time">9:00 PM</div>
-              <div class="full-message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
-                nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-                aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-                dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-                vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-                ante, dapibus in, viverra quis, feugiat a, </div>
-            </div>
-            <div class="list-group-item">
-              <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
-              <a href="#" class="name">Sergey Kovalenko</a>
-              <div class="full-message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-            <div class="list-group-item">
-              <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
-              <a href="#" class="name">Sergey Kovalenko</a>
-              <div class="full-message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-            <div class="list-group-item">
-              <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
-              <a href="#" class="name">Sergey Kovalenko</a>
-              <div class="full-message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
-                nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-                aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-                dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-                vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-                ante, dapibus in, viverra quis, feugiat a, </div>
-            </div>
-            <div  class="list-group-item">
-              <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
-              <a href="#" class="name">Sergey Kovalenko</a>
-              <div class="last-message-time">9:00 PM</div>
-              <div class="full-message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
-                nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-                aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-                dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-                vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-                ante, dapibus in, viverra quis, feugiat a, </div>
-            </div>
-            <div class="list-group-item">
-              <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
-              <a href="#" class="name">Sergey Kovalenko</a>
-              <div class="last-message-time">9:00 PM</div>
-              <div class="full-message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+      <div class="col-sm-9 content">
+        <div class="messages dialogs scroll-pane">
+          <div class="message dialog">
+            <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
+            <a href="#" class="name">Name Surname</a>
+            <div class="last-message-time">9:00 PM</div>
+            <div class="full-message">Lorem ipsum dolor sit amet, consectetuer adipiscing elitLorem ipsum dolor sit amet, consectetuer adipiscing elitLorem
+              ipsum dolor sit amet, consectetuer adipiscing elitLorem ipsum dolor sit amet, consectetuer adipiscing elit
             </div>
           </div>
-
+          <div class="message dialog">
+            <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
+            <a href="#" class="name">Name Surname</a>
+            <div class="last-message-time">9:00 PM</div>
+            <div class="full-message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In eni
+            </div>
+          </div>
+          <div class="message dialog">
+            <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
+            <a href="#" class="name">Name Surname</a>
+            <div class="last-message-time">9:00 PM</div>
+            <div class="full-message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, 
+            </div>
+          </div>
+          <div class="message dialog">
+            <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="profile-photo">
+            <a href="#" class="name">Name Surname</a>
+            <div class="last-message-time">9:00 PM</div>
+            <div class="full-message">Lorem ipsum dolor sit amet
+            </div>
+          </div>
         </div>
-        <form class="text-center" action="">
-          <input type="text" class="text-block" name="ms" id="ms">
-          <button type="button" class="btn btn-info">
-            <span class="glyphicon glyphicon-play"></span>
+        <div class="row sender">
+          <img src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user" class="col-xs-2 col-xs-offset-1 profile-photo img-responsive">
+          <textarea class="col-xs-7 send-field" contenteditable="true" aria-multiline="true" max-length="5"> </textarea>
+          <button type="button" class="btn btn-info col-xs-2">
+            <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
           </button>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-  <script type="text/javascript" src="http://jscrollpane.kelvinluck.com/script/jquery.mousewheel.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+      <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+      <script type="text/javascript" src="http://jscrollpane.kelvinluck.com/script/jquery.mousewheel.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
