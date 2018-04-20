@@ -1,5 +1,19 @@
 body{
-  background-color: #E7EBF0;
+  background-color: rgb(0, 40, 91);
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: auto auto;
+  background-size: cover; 
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 a:hover,a:focus{
  outline: none;
@@ -10,6 +24,7 @@ a:hover,a:focus{
  position: relative;
 }
 .tab:before{
+/*   фон */
  content: "";
  width: 100%;
  height: 100%;
@@ -40,6 +55,7 @@ a:hover,a:focus{
  position: relative;
  transition: all 0.5s ease 0s;
 }
+
 .tab .nav-tabs li a:hover{ background: transparent; }
 .tab .nav-tabs li.active a,
 .tab .nav-tabs li.active a:focus,
@@ -63,6 +79,7 @@ a:hover,a:focus{
  position: relative;
 }
 .form-horizontal .form-control{
+  /* инпуты */
  height: 40px;
  background-color: #6490B1;
  border: none;
@@ -84,50 +101,7 @@ a:hover,a:focus{
  text-transform: capitalize;
  margin-bottom: 10px;
 }
-.form-horizontal .main-checkbox{
- width: 20px;
- height: 20px;
- background: #6490B1;
- float: left;
- margin: 5px 0 0 20px;
- border: 1px solid #6490B1;
- position: relative;
-}
-.form-horizontal .main-checkbox label{
- width: 20px;
- height: 20px;
- position: absolute;
- top: 0;
- left: 0;
- cursor: pointer;
-}
-.form-horizontal .main-checkbox label:after{
- content: "";
- width: 10px;
- height: 5px;
- position: absolute;
- top: 5px;
- left: 4px;
- border: 3px solid #000;
- border-top: none;
- border-right: none;
- background: transparent;
- opacity: 0;
- -webkit-transform: rotate(-45deg);
- transform: rotate(-45deg);
-}
-.form-horizontal .main-checkbox input[type=checkbox]{ visibility: hidden; }
-.form-horizontal .main-checkbox input[type=checkbox]:checked + label:after{ opacity: 1; }
-.form-horizontal .text{
- float: left;
- font-size: 14px;
- font-weight: bold;
- color: #000;
- margin-left: 7px;
- line-height: 20px;
- padding-top: 5px;
- text-transform: capitalize;
-}
+
 .form-horizontal .btn{
  width: 100%;
  background:  #14489E;
@@ -143,20 +117,16 @@ a:hover,a:focus{
  outline: none;
  box-shadow: inset 2px 2px 2px #000;
 }
-.form-horizontal .forgot-pass{
- border-top: 1px solid #615f6c;
- margin: 0;
- text-align: center;
+.connector{
+  color: black;
+  font-size: 22px;
+  margin: -10px 0 0 0;
+  padding: 0;
+  text-align: center;
 }
-.form-horizontal .forgot-pass .btn{
- width: auto;
- background: transparent;
- margin-top: 30px;
- color: #000;
- text-transform: capitalize;
- transition: all 0.3s ease 0s;
-}
-.form-horizontal .forgot-pass .btn:hover{ color: #14489E; }
-@media only screen and (max-width: 479px){
- .tab{ padding: 40px 20px; }
+h3.text-center{
+  position: absolute;
+  top: 15px;
+  left:0;
+  right: 0;
 }
