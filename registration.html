@@ -49,7 +49,7 @@
                             <input type="password" class="form-control" id="confirm-pass">
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-default">Sign up</button>
+                            <button type="submit" class="btn btn-default send">Sign up</button>
                         </div>
                         <div class="form-group">
                             <h3 class="connector">or</h3>
@@ -66,15 +66,48 @@
 </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.validate.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
     $(function () {
-        console.log('work');
-        $('#name').validator({
-            feedback: {
-                success: 'glyphicon-thumbs-up',
-                error: 'glyphicon-thumbs-down'
-            }
-        });
+        var $name, $surname, $login, $email, $password, $confirm_pass;
+        $name = $("#name");
+        $surname = $("#surname");
+        $login = $("#login");
+        $email = $("#email");
+        $password = $("#password");
+        $confirm_pass = $("#confirm-pass");
+
+        $('.send')[0].onclick = function (e) {
+            console.log($login.val());
+            checkLoginExist($login.val());
+            checkEmailExist($email.val());
+        }
+
+
+        function checkLoginExist(login) {
+            $.ajax({
+                data: login,
+                success: function (request) {
+                    if (!request) {
+                        //вывести ошибку
+                    }
+                },
+                error: function(){
+
+                }
+            });
+        }
+
+        function checkEmailExist(email) {
+            $.ajax({
+                data: email,
+                success: function (request) {
+                    if (!request) {
+                        //вывести ошибку
+                    }
+                }
+            });
+        }
     });
 </script>

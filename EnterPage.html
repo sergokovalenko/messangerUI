@@ -46,7 +46,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-default" value="">Log In</button>
+                                            <button type="submit" class="btn btn-default send" value="">Log In</button>
                                             <a href="registration.html" class="btn btn-default">Sign up</a>
                                             <hr/>
                                         </div>
@@ -64,4 +64,43 @@
     </main>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('document').ready(function(){
+            var email, password;
+            email = $('#Email');
+            // var jEmail = JSON.parse(email.val())
+            password = $('#Password');
+            $('.send').on('click', function(){
+                //проверка, зареган ли такой пользователь
+                $.ajax({
+                    url:'/LogInCheck',
+                    date: {email: email.val()},
+                    success: function (request) {
+                        if(request){
+                            var userLog = JSON.parse(email.val(), password.val());
+
+                            $.ajax({
+                                url:'/LogIn',
+                                date: userLog,
+                                success: function(request){
+                                    if(!request){
+                                        //сказать, что неверный пароль
+                                    }
+                                },
+                                error: function (a,b,c) {
+                                    console.log(c);
+                                }
+                            })
+                        }
+                        else{
+                            //сказать, что не правильный email
+                        }
+                      },
+                    error: function (a,b,c) {
+                        console.log(c);
+                      }
+                })
+            })
+        })
+    </script>
 </body>
