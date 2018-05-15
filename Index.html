@@ -23,7 +23,6 @@
     <div class="row">
       <nav class="col-xs-12 navbar navbar-default">
         <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
               aria-expanded="false">
@@ -36,7 +35,6 @@
               <img alt="Brand" src="img/site/logo.png" width="40px" height="40px">
               <span class="brand">essenger</span>
             </a>
-            <!-- <a class="navbar-brand" href="#"></a> -->
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -74,17 +72,17 @@
             </ul> -->
             <ul class="nav navbar-nav nav-pills navbar-right">
               <li class="active">
-                <a href="#">Search</a>
+                <a class="search-btn" href="#">Search</a>
               </li>
               <li>
-                <a href="#">Settings</a>
+                <a class="settings-btn" href="#">Settings</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language
                   <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
+                  <li class="active">
                     <a href="#">Russian</a>
                   </li>
                   <li>
@@ -124,12 +122,11 @@
             <div class="short-message">Hello, i'm very tired</div>
             <span class="badge">1</span>
           </div>
-          <!--Extra dialogs-->
         </div>
       </div>
       <!-- messages here -->
       <div class="col-sm-9 content">
-        <div class="messages dialogs scroll-pane">
+        <div class="messages scroll-pane">
           <div class="message dialog">
             <img src="img/profiles/my.jpg" alt="user" class="profile-photo">
             <a href="#" class="name">Name Surname</a>
@@ -170,60 +167,62 @@
           </div>
         </div>
         <!--Actions here-->
-        <div class="row sender">
+        <form class="row sender">
           <img src="img/profiles/my.jpg" alt="user" class="col-xs-2 col-xs-offset-1 profile-photo img-responsive">
-          <textarea class="col-xs-7 send-field" contenteditable="true" aria-multiline="true" max-length="5"> </textarea>
-          <button type="button" class="btn btn-info col-xs-1" data-toggle="modal" data-target="#myModal">
+          <textarea class="col-xs-7 send-field auto-size" contenteditable="true" aria-multiline="true" max-length="6"> </textarea>
+          <button type="button" class="btn btn-info col-xs-1" id="send-message" data-toggle="modal" data-target="#Modal">
             <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
           </button>
-          <button type="button" class="btn btn-info col-xs-1" data-toggle="modal" data-target="#myModal">
+          <button type="button" class="btn btn-info col-xs-1" id="send-message" data-toggle="modal" data-target="#Modal">
             <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
           </button>
-        </div>
+        </form>
       </div>
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <h4 class="modal-title text-center" id="myModalLabel">Information</h4>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-xs-5">
-                  <img class="profile-img" src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user photo">
-                </div>
-                <div class="col-xs-7">
-                  <div class="name text-center">Name Surname</div>
-                  <div class="status text-center">Online</div>
-                  <button type="button" class="btn btn-default btn-write" data-dismiss="modal">Write</button>
-                </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title text-center" id="myModalLabel">Information</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-5">
+                <img class="profile-img" src="https://pp.userapi.com/c831408/v831408502/393ad/RVv0-lSAp6I.jpg" alt="user photo">
+              </div>
+              <div class="col-xs-7">
+                <div class="name text-center">Name Surname</div>
+                <div class="status text-center">Online</div>
+                <button type="button" class="btn btn-default btn-write" data-dismiss="modal">Write</button>
               </div>
             </div>
-            <div class="modal-footer">
-              <div class="row">
-                <div class="col-xs-5">
-                  <h4 class="profile-info text-right">E-mail:</h4>
-                  <h4 class="profile-info text-right">Login:</h4>
-                  <h4 class="profile-info text-right">Registration:</h4>
-                </div>
-                <div class="col-xs-7">
-                  <h4 class="profile-info text-left">example@messenger.su</h4>
-                  <h4 class="profile-info text-left">example</h4>
-                  <h4 class="profile-info text-left">1.1.1970</h4>
-                </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-5">
+                <h4 class="profile-info text-right">E-mail:</h4>
+                <h4 class="profile-info text-right">Login:</h4>
+                <h4 class="profile-info text-right">Registration:</h4>
+              </div>
+              <div class="col-xs-7">
+                <h4 class="profile-info text-left">example@messenger.su</h4>
+                <h4 class="profile-info text-left">example</h4>
+                <h4 class="profile-info text-left">1.1.1970</h4>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <script src="js/jquery-3.3.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-      <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-      <script type="text/javascript" src="js/script.js"></script>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
