@@ -1,0 +1,17 @@
+.navbar-default{
+    margin: 0;
+    background-color: rgb(199, 221, 231);
+    color: white;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+    background-color: #fff;
+}
+
+.dropdown-menu{
+    padding: 0;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover{
+    background-color: #c7dde7;
+}

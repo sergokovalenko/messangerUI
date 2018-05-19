@@ -1,11 +1,6 @@
 body{
   background-color: #E7EBF0;
 }
-.navbar{
-  margin: 0;
-  background-color: rgb(199, 221, 231);
-  color: white;
-}
 .brand{
   color: #14489E;
   font-weight: 700;
@@ -70,6 +65,7 @@ body{
   margin-top: 10px;
 }
 .last-message-time{
+  margin-left: 5px;
   display: inline-block;
 }
 .badge{
