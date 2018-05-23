@@ -45,7 +45,6 @@
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
-
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
                   <span class="caret"></span>
@@ -72,7 +71,7 @@
               </li>
             </ul> -->
             <ul class="nav navbar-nav nav-pills navbar-right">
-              <li class="active">
+              <li class="">
                 <a class="search-btn" href="#">Search</a>
               </li>
               <li>
@@ -101,12 +100,14 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-3 content">
-        <div class="search-dialog">
-          <div class="search-field">
-            <input type="text" class="form-control" placeholder="Search" maxlength="40">
+        <div class="action-box">
+          <div class="search-dialog">
+            <div class="search-field">
+              <input type="text" class="form-control" placeholder="Search" maxlength="40">
+            </div>
           </div>
+          <button class="btn btn-default create-conversation">Start Conversation</button>
         </div>
-        <button class="btn btn-default create-conversation">Start Conversation</button>
         <div class="dialogs scroll-pane">
           <!--Dialogs-->
           <div class="dialog activeted">
@@ -170,8 +171,8 @@
         <!--Actions here-->
         <form class="row sender">
           <img src="img/profiles/my.jpg" alt="user" class="col-xs-2 col-xs-offset-1 profile-photo img-responsive">
-          <textarea class="col-xs-7 send-field auto-size" contenteditable="true" aria-multiline="true" max-length="6"> </textarea>
-          <button type="button" class="btn btn-info col-xs-1" id="send-message" data-toggle="modal" data-target="#Modal">
+          <textarea class="col-xs-7 send-field form-control" contenteditable="true" aria-multiline="true" max-length="6"> </textarea>
+          <button type="button" class="btn btn-info col-xs-1" id="send-message">
             <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
           </button>
           <button type="button" class="btn btn-info col-xs-1" id="send-message" data-toggle="modal" data-target="#Modal">
@@ -188,7 +189,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title text-center" id="myModalLabel">Information</h4>
+            <h4 class="modal-title text-center" id="myModalLabel">Profile Information</h4>
           </div>
           <div class="modal-body">
             <div class="row">
@@ -219,6 +220,7 @@
         </div>
       </div>
     </div>
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>

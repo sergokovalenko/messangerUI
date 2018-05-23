@@ -28,9 +28,25 @@ body{
   border-bottom: 1px grey solid;
   height: 300px;
 }
+.action-box{
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+}
 .content .create-conversation{
   width: 90%;
-  margin: 0 5% 10px 5%;
+  margin: 0 5%;
+}
+.search-dialog{
+  padding: 0 5% ;
+  margin-bottom: 10px;
+}
+.search-dialog input{
+  width: 100%;
+  border: none;
+  background-color: #F2F2F2;
+}
+.search-dialog input:focus{
+  background-color: white;
 }
 .scroll-pane {
 	width: 100%; /* Ширина видимой области*/
@@ -90,9 +106,6 @@ body{
 .messages{
   height: 75vh;
 }
-/* .messages{
-  height: 200px;
-} */
 .sender{
   position: relative;
   height: 80px;
@@ -127,17 +140,7 @@ button.btn{
   margin-top: 10px;
 }
 
-.search-dialog{
-  padding: 5%;
-}
-.search-dialog input{
-  width: 100%;
-  border: none;
-  background-color: #F2F2F2;
-}
-.search-dialog input:focus{
-  background-color: white;
-}
+
 
 .activeted,.activeted a{
   /* background-color: rgb(88, 255, 82); */
